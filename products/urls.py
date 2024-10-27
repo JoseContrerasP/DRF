@@ -8,7 +8,3 @@ urlpatterns = [
 	path("update/<int:pk>", views.ProductUpdateAPIView.as_view()),
 	path("delete/<int:pk>", views.ProductDestroyAPIView.as_view()),
 ]
-
-# update my cv
-
-# take down cities blog
