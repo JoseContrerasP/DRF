@@ -24,8 +24,8 @@ class ProductListCreateAPIView(generics.ListCreateAPIView):
 	# permission_classes = []
 
 	def perform_create(self, serializer):
-		title = serializer.validate_data.get("title")
-		content = serializer.validate_data.get("content") or None
+		title = serializer.validated_data.get("title")
+		content = serializer.validated_data.get("content") or None
 
 		if content is None:
 			content = "puedo ver tu sombra en la luna"
